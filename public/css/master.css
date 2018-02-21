@@ -1,0 +1,87 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+.slider {
+  background-color: #f6f6f6;
+  position: relative;
+  width: 100vw;
+  height: 70vh; }
+  .slider-progress {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10px; }
+    .slider-progressed {
+      position: relative;
+      height: 10px;
+      width: 90vw;
+      background-color: darkred; }
+
+.header-dash {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 60px;
+  line-height: 50px;
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 300px auto 60px 60px 60px 60px;
+  grid-gap: 10px;
+  grid-column: minmax(auto, 60px);
+  grid-auto-rows: minmax(60px, auto); }
+  .header-dash .logo-grid {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: pink; }
+  .header-dash .login-grid {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: green; }
+  .header-dash .cart-grid {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: orange; }
+  .header-dash .search-grid {
+    grid-column: 5;
+    grid-row: 1;
+    background-color: purple; }
+  .header-dash .menu-grid {
+    grid-column: 6;
+    grid-row: 1;
+    background-color: yellow; }
+
+.quicklinks {
+  margin: 50px;
+  width: 100vw;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  grid-column: minmax(auto, auto);
+  grid-auto-rows: minmax(300px, auto); }
+
+.lookbook-men {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: green; }
+
+.newsletter {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: pink; }
+
+.lookbook-women {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: blue; }
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333333; }
